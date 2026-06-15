@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Altitude Commerce LLC | International Trade Solutions</title>
+<title>Altitude Commerce LLC | USA & Latin America Trade Solutions</title>
 
-<meta name="description" content="Altitude Commerce LLC provides wholesale purchasing management, sourcing and international trade solutions throughout the United States and Latin America.">
+<meta name="description" content="Altitude Commerce LLC connects businesses with suppliers, coordinates wholesale purchasing and supports market development throughout the USA and Latin America.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
-html{
-scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth;}
 
 body{
 font-family:'Inter',sans-serif;
-line-height:1.7;
 color:#1f2937;
-padding-top:80px;
+line-height:1.7;
+padding-top:85px;
 }
 
 .container{
@@ -47,7 +36,7 @@ position:fixed;
 top:0;
 width:100%;
 background:white;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+box-shadow:0 2px 15px rgba(0,0,0,.08);
 z-index:1000;
 }
 
@@ -73,13 +62,13 @@ color:#64748b;
 nav ul{
 display:flex;
 list-style:none;
-gap:30px;
+gap:25px;
 }
 
 nav a{
 text-decoration:none;
-color:#111827;
 font-weight:600;
+color:#0f172a;
 }
 
 .lang-btn{
@@ -89,17 +78,14 @@ border:none;
 padding:10px 16px;
 border-radius:8px;
 cursor:pointer;
-font-weight:700;
 }
 
 .hero{
 min-height:100vh;
 display:flex;
 align-items:center;
-background:
-linear-gradient(rgba(9,23,43,.82),rgba(9,23,43,.82)),
-url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4?q=80&w=1800&auto=format&fit=crop');
-
+background:linear-gradient(rgba(15,23,42,.82),rgba(15,23,42,.82)),
+url('https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=2200&auto=format&fit=crop');
 background-size:cover;
 background-position:center;
 color:white;
@@ -108,50 +94,79 @@ color:white;
 .hero h1{
 font-size:4rem;
 line-height:1.1;
-margin-bottom:25px;
+margin-bottom:20px;
 }
 
 .hero p{
 font-size:1.2rem;
 max-width:800px;
-margin-bottom:35px;
+margin-bottom:30px;
 }
+
+.badges{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.badge{
+padding:12px 18px;
+border-radius:30px;
+font-weight:700;
+}
+
+.b1{background:#f59e0b;}
+.b2{background:#2563eb;}
+.b3{background:#16a34a;}
 
 .btn{
 display:inline-block;
-padding:16px 30px;
-background:#f59e0b;
-color:white;
+padding:15px 28px;
+border-radius:10px;
 text-decoration:none;
 font-weight:700;
-border-radius:10px;
+margin-right:12px;
 }
 
-section{
-padding:100px 0;
-}
+.primary{background:#f59e0b;color:white;}
+.secondary{background:white;color:#0f172a;}
+
+section{padding:100px 0;}
+
+.about{background:linear-gradient(#fff,#f8fafc);}
+.services{background:linear-gradient(#f8fafc,#eef4f8);}
+.why{background:linear-gradient(#eef4f8,#fff);}
+.industries{background:#f8fafc;}
 
 .section-title{
-font-size:2.5rem;
+font-size:2.6rem;
 text-align:center;
-margin-bottom:50px;
+margin-bottom:55px;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(3,1fr);
 gap:25px;
 }
 
 .card{
-background:#fff;
-padding:30px;
-border-radius:16px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+border-top:5px solid #2563eb;
+transition:.3s;
 }
 
-.industries{
-background:#f8fafc;
+.card:hover{
+transform:translateY(-10px);
+}
+
+.icon{
+font-size:2rem;
+margin-bottom:10px;
 }
 
 .contact{
@@ -169,10 +184,10 @@ footer{
 background:#020617;
 color:white;
 text-align:center;
-padding:30px;
+padding:35px;
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
 
 nav{
 flex-direction:column;
@@ -185,7 +200,11 @@ justify-content:center;
 }
 
 .hero h1{
-font-size:2.4rem;
+font-size:2.5rem;
+}
+
+.grid{
+grid-template-columns:1fr;
 }
 
 .section-title{
@@ -195,178 +214,137 @@ font-size:2rem;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
-
 <div class="container">
-
 <nav>
 
 <div class="logo">
-
 Altitude Commerce LLC
-
-<small>
-
-USA • Latin America Trade Solutions
-
-</small>
-
+<small>USA • Latin America Trade Solutions</small>
 </div>
 
 <ul>
-
-<li><a href="#about" id="nav1">About</a></li>
-
-<li><a href="#services" id="nav2">Services</a></li>
-
-<li><a href="#industries" id="nav3">Industries</a></li>
-
-<li><a href="#contact" id="nav4">Contact</a></li>
-
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#industries">Industries</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 
-<button class="lang-btn" id="langBtn">
-
-Español
-
-</button>
+<button class="lang-btn">Español</button>
 
 </nav>
-
 </div>
-
 </header>
 
 <section class="hero">
 
 <div class="container">
 
-<h1 id="heroTitle">
+<h1>Connecting Markets Across Borders</h1>
 
-Connecting Markets Across Borders
+<div class="badges">
+<div class="badge b1">📦 Wholesale Purchasing</div>
+<div class="badge b2">🌎 USA & Latin America</div>
+<div class="badge b3">🤝 Supplier Coordination</div>
+</div>
 
-</h1>
+<p>Altitude Commerce LLC specializes in wholesale purchasing management, supplier coordination, sourcing assistance and international business support throughout the United States and Latin America.</p>
 
-<p id="heroText">
+<a href="#contact" class="btn primary">Contact Us</a>
 
-Altitude Commerce LLC specializes in wholesale purchasing management, supplier coordination and international trade solutions throughout the United States and Latin America.
-
-</p>
-
-<a href="#contact" class="btn" id="heroButton">
-
-Contact Us
-
-</a>
+<a href="#services" class="btn secondary">Our Services</a>
 
 </div>
 
 </section>
 
-<section id="about">
+<section class="about" id="about">
 
 <div class="container">
 
-<h2 class="section-title" id="aboutTitle">
+<h2 class="section-title">About Us</h2>
 
-About Us
-
-</h2>
-
-<p id="aboutText">
-
-Altitude Commerce LLC is an international trading and sourcing company focused on connecting businesses with qualified suppliers, manufacturers and commercial opportunities.
-
-We support cross-border trade while also providing business services throughout the United States.
-
-Our mission is to simplify commerce by helping businesses establish supplier relationships, coordinate purchases, overcome language barriers and build reliable supply chains.
-
-</p>
+<p>Altitude Commerce LLC is an international trade facilitation company focused on connecting businesses with suppliers, manufacturers and commercial opportunities. We support cross-border trade while also providing services within the United States. Our mission is to simplify commerce by helping businesses coordinate purchases, overcome language barriers and build reliable supplier relationships.</p>
 
 </div>
 
 </section>
 
-<section id="services">
+<section>
 
 <div class="container">
 
-<h2 class="section-title" id="servicesTitle">
+<h2 class="section-title">How It Works</h2>
 
-Our Services
+<div class="grid">
 
-</h2>
+<div class="card"><div class="icon">📝</div><h3>Consultation</h3><p>We understand your goals and sourcing needs.</p></div>
+
+<div class="card"><div class="icon">🔍</div><h3>Supplier Search</h3><p>We identify suppliers and wholesale opportunities.</p></div>
+
+<div class="card"><div class="icon">📈</div><h3>Expansion</h3><p>We help build long-term market relationships.</p></div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="services" id="services">
+
+<div class="container">
+
+<h2 class="section-title">Our Services</h2>
 
 <div class="grid">
 
 <div class="card">
-
-<h3>
-
-Wholesale Purchase Management & Product Sourcing
-
-</h3>
-
-<p>
-
-We simplify wholesale purchasing by helping businesses identify suppliers, coordinate orders, negotiate opportunities and overcome language barriers.
-
-</p>
-
+<div class="icon">📦</div>
+<h3>Wholesale Purchasing & Product Sourcing</h3>
+<p>Coordinate purchases, identify suppliers and overcome language barriers.</p>
 </div>
 
 <div class="card">
-
-<h3>
-
-Supplier Coordination
-
-</h3>
-
-<p>
-
-Supporting communication and relationship development between buyers, manufacturers and suppliers.
-
-</p>
-
+<div class="icon">🤝</div>
+<h3>Supplier Coordination</h3>
+<p>Strengthen communication between buyers, manufacturers and suppliers.</p>
 </div>
 
 <div class="card">
-
-<h3>
-
-Import & Export Support
-
-</h3>
-
-<p>
-
-Facilitating international trade opportunities and helping businesses navigate cross-border commerce.
-
-</p>
-
+<div class="icon">🌎</div>
+<h3>Import & Export Support</h3>
+<p>Assist businesses navigating cross-border opportunities.</p>
 </div>
 
 <div class="card">
-
-<h3>
-
-Market Development
-
-</h3>
-
-<p>
-
-Helping businesses expand products and partnerships throughout the United States and Latin America.
-
-</p>
+<div class="icon">📊</div>
+<h3>Market Development</h3>
+<p>Business expansion support throughout the USA and Latin America.</p>
+</div>
 
 </div>
+
+</div>
+
+</section>
+
+<section class="why">
+
+<div class="container">
+
+<h2 class="section-title">Why Altitude Commerce</h2>
+
+<div class="grid">
+
+<div class="card"><div class="icon">🌐</div><h3>International Reach</h3><p>Support throughout the USA and Latin America.</p></div>
+
+<div class="card"><div class="icon">🗣️</div><h3>Language Support</h3><p>Bridge communication barriers.</p></div>
+
+<div class="card"><div class="icon">⚡</div><h3>Business Efficiency</h3><p>Simplify sourcing and purchasing processes.</p></div>
 
 </div>
 
@@ -378,61 +356,21 @@ Helping businesses expand products and partnerships throughout the United States
 
 <div class="container">
 
-<h2 class="section-title" id="industriesTitle">
-
-Industries We Serve
-
-</h2>
+<h2 class="section-title">Industries We Serve</h2>
 
 <div class="grid">
 
-<div class="card">
+<div class="card"><div class="icon">💻</div><h3>Electronics & Technology</h3><p>Consumer electronics, accessories and technology products.</p></div>
 
-<h3>Electronics & Technology</h3>
+<div class="card"><div class="icon">🏡</div><h3>Home & Garden</h3><p>Furniture, décor and household solutions.</p></div>
 
-<p>Electronic devices, consumer technology, accessories and related products.</p>
+<div class="card"><div class="icon">👕</div><h3>Clothing & Apparel</h3><p>Garments, footwear and textiles.</p></div>
 
-</div>
+<div class="card"><div class="icon">🍽️</div><h3>Food & Beverages</h3><p>Packaged goods and beverage solutions.</p></div>
 
-<div class="card">
+<div class="card"><div class="icon">🏗️</div><h3>Construction Materials</h3><p>Commercial and residential building products.</p></div>
 
-<h3>Home & Garden</h3>
-
-<p>Furniture, décor, outdoor living products and household solutions.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Clothing & Apparel</h3>
-
-<p>Garments, footwear, textiles and fashion accessories.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Food & Beverages</h3>
-
-<p>Commercial food products, packaged goods and beverage solutions.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Construction Materials</h3>
-
-<p>Products and supplies for residential and commercial projects.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Automotive Components</h3>
-
-<p>Parts, accessories and products for automotive industries.</p>
-
-</div>
+<div class="card"><div class="icon">🚗</div><h3>Automotive Components</h3><p>Parts and accessories for automotive businesses.</p></div>
 
 </div>
 
@@ -444,39 +382,15 @@ Industries We Serve
 
 <div class="container">
 
-<h2 id="contactTitle">
+<h2>Contact Altitude Commerce LLC</h2>
 
-Contact Altitude Commerce LLC
+<p>📞 +1 (786) 432-5396</p>
 
-</h2>
+<p>📧 <a href="mailto:info@altitudebiz.com">info@altitudebiz.com</a></p>
 
-<p style="margin-top:25px;">
+<p>📍 7531 NW 52nd Street, Miami, FL 33166</p>
 
-📞 +1 (786) 432-5396
-
-</p>
-
-<p>
-
-📧 <a href="mailto:info@altitudebiz.com">
-
-info@altitudebiz.com
-
-</a>
-
-</p>
-
-<p>
-
-📍 7531 NW 52nd Street, Miami, FL 33166
-
-</p>
-
-<p>
-
-🌎 United States & Latin America
-
-</p>
+<p>🌎 United States</p>
 
 </div>
 
@@ -490,86 +404,11 @@ Altitude Commerce LLC
 
 International Trade • Wholesale Purchasing • Supplier Coordination
 
-<br>
-
-United States & Latin America
-
 <br><br>
 
 © 2026 Altitude Commerce LLC. All Rights Reserved.
 
 </footer>
 
-<script>
-
-const btn=document.getElementById('langBtn');
-
-let english=true;
-
-btn.addEventListener('click',()=>{
-
-if(english){
-
-document.documentElement.lang='es';
-
-document.getElementById('nav1').innerText='Nosotros';
-document.getElementById('nav2').innerText='Servicios';
-document.getElementById('nav3').innerText='Industrias';
-document.getElementById('nav4').innerText='Contacto';
-
-document.getElementById('heroTitle').innerText='Conectando Mercados Más Allá de las Fronteras';
-
-document.getElementById('heroText').innerText='Altitude Commerce LLC se especializa en la gestión de compras al por mayor, coordinación de proveedores y soluciones comerciales en Estados Unidos y Latinoamérica.';
-
-document.getElementById('heroButton').innerText='Contáctenos';
-
-document.getElementById('aboutTitle').innerText='Sobre Nosotros';
-
-document.getElementById('aboutText').innerText='Altitude Commerce LLC es una empresa internacional enfocada en conectar empresas con proveedores, fabricantes y oportunidades comerciales. Apoyamos el comercio internacional y también brindamos servicios dentro de Estados Unidos, ayudando a coordinar compras, superar barreras de idioma y construir cadenas de suministro confiables.';
-
-document.getElementById('servicesTitle').innerText='Nuestros Servicios';
-
-document.getElementById('industriesTitle').innerText='Industrias que Atendemos';
-
-document.getElementById('contactTitle').innerText='Contáctenos';
-
-btn.innerText='English';
-
-}else{
-
-document.documentElement.lang='en';
-
-document.getElementById('nav1').innerText='About';
-document.getElementById('nav2').innerText='Services';
-document.getElementById('nav3').innerText='Industries';
-document.getElementById('nav4').innerText='Contact';
-
-document.getElementById('heroTitle').innerText='Connecting Markets Across Borders';
-
-document.getElementById('heroText').innerText='Altitude Commerce LLC specializes in wholesale purchasing management, supplier coordination and international trade solutions throughout the United States and Latin America.';
-
-document.getElementById('heroButton').innerText='Contact Us';
-
-document.getElementById('aboutTitle').innerText='About Us';
-
-document.getElementById('aboutText').innerText='Altitude Commerce LLC is an international trading and sourcing company focused on connecting businesses with qualified suppliers, manufacturers and commercial opportunities. We support cross-border trade while also providing business services throughout the United States. Our mission is to simplify commerce by helping businesses establish supplier relationships, coordinate purchases, overcome language barriers and build reliable supply chains.';
-
-document.getElementById('servicesTitle').innerText='Our Services';
-
-document.getElementById('industriesTitle').innerText='Industries We Serve';
-
-document.getElementById('contactTitle').innerText='Contact Altitude Commerce LLC';
-
-btn.innerText='Español';
-
-}
-
-english=!english;
-
-});
-
-</script>
-
 </body>
-
 </html>
