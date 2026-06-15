@@ -1,16 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Altitude Commerce LLC | International Trade Solutions</title>
 
-<meta name="description" content="Altitude Commerce LLC provides wholesale purchasing management, supplier coordination, sourcing and international trade solutions throughout the United States and Latin America.">
+<meta name="description" content="Altitude Commerce LLC provides wholesale purchasing management, sourcing and international trade solutions throughout the United States and Latin America.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -31,6 +33,7 @@ body{
 font-family:'Inter',sans-serif;
 line-height:1.7;
 color:#1f2937;
+padding-top:80px;
 }
 
 .container{
@@ -58,6 +61,13 @@ padding:18px 0;
 .logo{
 font-size:1.4rem;
 font-weight:800;
+}
+
+.logo small{
+display:block;
+font-size:12px;
+font-weight:500;
+color:#64748b;
 }
 
 nav ul{
@@ -89,6 +99,7 @@ align-items:center;
 background:
 linear-gradient(rgba(9,23,43,.82),rgba(9,23,43,.82)),
 url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4?q=80&w=1800&auto=format&fit=crop');
+
 background-size:cover;
 background-position:center;
 color:white;
@@ -149,6 +160,11 @@ color:white;
 text-align:center;
 }
 
+.contact a{
+color:white;
+text-decoration:none;
+}
+
 footer{
 background:#020617;
 color:white;
@@ -191,7 +207,15 @@ font-size:2rem;
 <nav>
 
 <div class="logo">
+
 Altitude Commerce LLC
+
+<small>
+
+USA • Latin America Trade Solutions
+
+</small>
+
 </div>
 
 <ul>
@@ -207,7 +231,9 @@ Altitude Commerce LLC
 </ul>
 
 <button class="lang-btn" id="langBtn">
+
 Español
+
 </button>
 
 </nav>
@@ -228,7 +254,7 @@ Connecting Markets Across Borders
 
 <p id="heroText">
 
-Altitude Commerce LLC specializes in wholesale purchasing management, supplier coordination, and international trade solutions throughout the United States and Latin America.
+Altitude Commerce LLC specializes in wholesale purchasing management, supplier coordination and international trade solutions throughout the United States and Latin America.
 
 </p>
 
@@ -254,11 +280,11 @@ About Us
 
 <p id="aboutText">
 
-Altitude Commerce LLC is an international trading and sourcing company focused on connecting businesses with qualified suppliers, manufacturers, and commercial opportunities.
+Altitude Commerce LLC is an international trading and sourcing company focused on connecting businesses with qualified suppliers, manufacturers and commercial opportunities.
 
-We support cross-border trade while also providing sourcing and business services within the United States.
+We support cross-border trade while also providing business services throughout the United States.
 
-Our mission is to simplify commerce by helping businesses establish supplier relationships, coordinate purchases, overcome language barriers, and build reliable supply chains.
+Our mission is to simplify commerce by helping businesses establish supplier relationships, coordinate purchases, overcome language barriers and build reliable supply chains.
 
 </p>
 
@@ -288,7 +314,7 @@ Wholesale Purchase Management & Product Sourcing
 
 <p>
 
-We simplify wholesale purchasing by helping businesses identify suppliers, coordinate orders, and overcome language barriers throughout the sourcing process.
+We simplify wholesale purchasing by helping businesses identify suppliers, coordinate orders, negotiate opportunities and overcome language barriers.
 
 </p>
 
@@ -304,7 +330,7 @@ Supplier Coordination
 
 <p>
 
-Supporting communication and relationship development between buyers, manufacturers, and suppliers.
+Supporting communication and relationship development between buyers, manufacturers and suppliers.
 
 </p>
 
@@ -336,7 +362,7 @@ Market Development
 
 <p>
 
-Helping businesses expand products and partnerships throughout the entire United States and Latin America.
+Helping businesses expand products and partnerships throughout the United States and Latin America.
 
 </p>
 
@@ -432,6 +458,16 @@ Contact Altitude Commerce LLC
 
 <p>
 
+📧 <a href="mailto:info@altitudebiz.com">
+
+info@altitudebiz.com
+
+</a>
+
+</p>
+
+<p>
+
 📍 7531 NW 52nd Street, Miami, FL 33166
 
 </p>
@@ -457,6 +493,10 @@ International Trade • Wholesale Purchasing • Supplier Coordination
 <br>
 
 United States & Latin America
+
+<br><br>
+
+© 2026 Altitude Commerce LLC. All Rights Reserved.
 
 </footer>
 
@@ -497,7 +537,30 @@ btn.innerText='English';
 
 }else{
 
-location.reload();
+document.documentElement.lang='en';
+
+document.getElementById('nav1').innerText='About';
+document.getElementById('nav2').innerText='Services';
+document.getElementById('nav3').innerText='Industries';
+document.getElementById('nav4').innerText='Contact';
+
+document.getElementById('heroTitle').innerText='Connecting Markets Across Borders';
+
+document.getElementById('heroText').innerText='Altitude Commerce LLC specializes in wholesale purchasing management, supplier coordination and international trade solutions throughout the United States and Latin America.';
+
+document.getElementById('heroButton').innerText='Contact Us';
+
+document.getElementById('aboutTitle').innerText='About Us';
+
+document.getElementById('aboutText').innerText='Altitude Commerce LLC is an international trading and sourcing company focused on connecting businesses with qualified suppliers, manufacturers and commercial opportunities. We support cross-border trade while also providing business services throughout the United States. Our mission is to simplify commerce by helping businesses establish supplier relationships, coordinate purchases, overcome language barriers and build reliable supply chains.';
+
+document.getElementById('servicesTitle').innerText='Our Services';
+
+document.getElementById('industriesTitle').innerText='Industries We Serve';
+
+document.getElementById('contactTitle').innerText='Contact Altitude Commerce LLC';
+
+btn.innerText='Español';
 
 }
 
@@ -508,4 +571,5 @@ english=!english;
 </script>
 
 </body>
+
 </html>
